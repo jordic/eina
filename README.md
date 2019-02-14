@@ -4,8 +4,8 @@
     @galigan
 
 
-- [Programa de la Asignatura](../blob/master/programa.md)
-- [Clase 1](../blob/master/clase1.md)
+- [Programa de la Asignatura](programa.md)
+- [Clase 1](clase1.md)
 
 
 ### Objetivos
