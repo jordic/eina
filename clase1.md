@@ -121,7 +121,9 @@ El html es una variante de este, por eso lo marcamos al principio del documento.
 ## Ejercicio
 
 ```
-Crearemos un nuevo archivo con extensión .html, y la template básica utf-8 y le añadiremos los tags y elementos básicos para experimentar con su funcionamiento
+Crearemos un nuevo archivo con extensión .html, y la template básica 
+utf-8 y le añadiremos los tags y elementos básicos para 
+experimentar con su funcionamiento
 ```
 
 1. Que pasa si al elemento `<p>` le añadimos un atributo style con las siguientes propiedades `background-color:red; color: white`
@@ -172,11 +174,14 @@ En nuestro caso, usaremos como cliente ftp el programa FileZilla
 ```
 Ejercicio
 --
+- Crear la cuenta
 - Configurar la cuenta de FTP de cada alumno.
 - Crear una carpeta de nombre programacion y subir el ejercicio html realizado anteriormente en esta.
 - Comprobar des del navegador accediendo a la dirección de nuestra carpeta:
 
 ```
+La cuenta se puede crear en la [siguiente dirección](https://www.000webhost.com/)
+
 
 ## HTTPS
 
