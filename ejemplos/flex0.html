@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="reset.css">
+
+    <style>
+        main {
+            box-sizing: border-box;
+            display: flex;
+            min-height: 99vh;
+        }
+        main > * {
+            box-sizing: border-box;
+            border: 1px dotted red;
+            padding: 20px;
+        }
+        .col1 {
+            flex: 1;
+        }
+        .big {
+            flex: 3;
+        }
+
+    </style>
+
+</head>
+<body>
+    <main>
+        <aside class="col1">Col 1</aside>
+        <article class="big">Col 2</article>
+        <aside class="col1">Col 3</aside>
+    </main>
+</body>
+</html>

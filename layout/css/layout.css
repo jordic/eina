@@ -1,0 +1,145 @@
+
+body {
+    font-family: 'Roboto', Helvetica, Arial;
+    overflow-x: hidden;
+    background-image: url(../img/bg.svg);
+    background-position: 0px 0px;
+}
+
+.maxw {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    box-sizing: border-box;
+    height: 100px;
+}
+
+header > * {
+    flex: 1;
+}
+.menu {
+    display: flex;
+    position: fixed;
+    width: 30%;
+    height: 100vh;
+    top: 0px;
+    right: -30%;
+    background-color: rgb(126, 57, 90);
+    font-size: 26px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-out all;
+}
+
+.opened {
+    right: 0;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+.menu a:hover {
+    color: #000000;
+    transition: 0.3s linear color;
+}
+
+.menu li {
+    margin:30px;
+}
+
+.menu .fas {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color:#fff;
+    cursor: pointer;
+}
+
+.logo {
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.logo h1 {
+    font-size: 44px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+.logo img {
+    width: 60px; 
+}
+
+nav {
+    padding: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .fas {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+main article {
+    height: 300px; 
+    flex-basis: 30%;
+    background-color: pink;
+    margin-bottom: 5%;
+}
+
+main article:hover {
+    box-shadow: 10px 10px 41px -13px rgba(0,0,0,0.75);
+}
+
+@media (max-width: 767px) {
+    .logo img {
+        width: 37px;
+    }
+    .logo {
+        padding: 15px;
+        flex: 4;
+    }    
+    .logo h1 {
+        font-size: 24px;
+    }
+    nav {
+        padding: 15px;
+    }
+    nav .fas {
+        font-size: 24px;
+    }
+    main {
+        padding: 15px;
+    }
+    main article {
+        flex-basis: 100%;
+    }
+    header {
+        height: 76px;
+    }
+
+    .menu {
+        width: 100%;
+        right: -100%;
+    }
+
+    .opened {
+        right: 0;
+    }
+
+}

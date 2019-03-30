@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>centered</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <style>
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            /* Horizontal centering (main axis): */
+            justify-content: center;
+            /* Vertical centering (cross axis): */
+            align-items: center;
+        }
+
+        .box {
+            width: 50vh;
+            height: 50vh;
+            background-color: pink;
+            align-self: center;
+            display: flex;
+            vertical-align: middle;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .typo {
+            font-family: Arial, Helvetica;
+            font-size: 5vh;
+            font-weight: bold;
+            color: #832865;
+            text-transform: uppercase;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="box typo">
+        Pink Color
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Flexbox margins?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body {
+    margin: 2vh;
+    font-family: monospace;
+    font-size: 10px;
+}
+
+h1 {
+    margin-top: 30px;
+    color: rgb(153, 153, 153);
+    border-bottom: 1px solid rgb(153, 153, 153);
+}
+
+.row {
+    display: flex;
+    height: 10vh;
+    background-color: gainsboro
+}
+
+.box {
+    box-sizing: border-box;
+    background-color: rgb(32, 110, 212);
+    flex-basis: 20%;
+}
+.box:nth-child(2) {
+    background-color: pink;
+}
+.box:nth-child(3) {
+    background-color: rgb(197, 120, 191);
+}
+
+</style>
+
+
+</head>
+<body>
+
+<h1>justify-content: flex-start</h1>
+<div class="row" style="justify-content: flex-start">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+
+<h1>justify-content: flex-end</h1>
+<div class="row" style="justify-content: flex-end">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+
+<h1>justify-content: center</h1>
+<div class="row" style="justify-content: center">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+
+<h1>justify-content: space-between</h1>
+<div class="row" style="justify-content: space-between">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+
+<h1>justify-content: space-around</h1>
+<div class="row" style="justify-content: space-around">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+
+</body>
+</html>

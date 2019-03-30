@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Flexbox margins?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body {
+    margin: 2vh;
+    font-family: monospace;
+    font-size: 10px;
+}
+
+h1 {
+    margin-top: 30px;
+    color: rgb(153, 153, 153);
+    border-bottom: 1px solid rgb(153, 153, 153);
+}
+
+.row {
+    display: flex;
+    height: 30vh;
+    background-color: gainsboro;
+    justify-content: center;
+}
+
+.box {
+    box-sizing: border-box;
+    background-color: rgb(32, 110, 212);
+    flex-basis: 20%;
+    height: 10vh;
+    margin: 0 2%;
+    order: 100;
+}
+
+.box:nth-child(2) {
+    background-color: pink;
+}
+.box:nth-child(3) {
+    background-color: rgb(197, 120, 191);
+}
+
+</style>
+
+
+</head>
+<body>
+
+<h1>align-items: flex-end</h1>
+<div class="row" style="align-items: center">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+</div>
+
+<h1>Forzamos la ordenacion</h1>
+<div class="row">
+    <div class="box">1</div>
+    <div class="box" style="order:1">2</div>
+    <div class="box" style="order:2">3</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Responsive grid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="reset.css">
+</head>
+
+<style>
+    main {
+        min-height: 100vh;
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: flex-start;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    article {
+        box-sizing: border-box;
+        width: 40vw;
+        max-width: 400px;
+        height: 25vh;
+        background-color: #1db5e4;
+        margin-top: 5vh;
+        display: flex;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: center;
+        color: #19738f;
+        font-size: 3em;
+    }
+
+    article:hover {
+        background-color: #1a748f;
+        color: #fff;
+        transition: all 0.3s;
+    }
+
+    @media all and (max-width: 480px) {
+        article {
+            width: 85%;
+        }
+    }
+
+</style>
+
+<body>
+
+    <main>
+        <article>Art 1</article>
+        <article>Art 2</article>
+        <article>Art 3</article>
+        <article>Art 4</article>
+        <article>Art 5</article>
+        <article>Art 6</article>
+        <article>Art 7</article>
+        <article>Art 8</article>
+    </main>
+
+
+</body>
+</html>

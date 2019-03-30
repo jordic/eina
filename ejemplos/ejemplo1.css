@@ -1,0 +1,60 @@
+
+
+.wrap {
+    max-width: 80em;
+    margin: 0 auto;
+}
+
+header {
+    background-color: greenyellow;
+    height: 6em;
+}
+
+main {
+    box-sizing: border-box;
+    width: 70%;
+    float: left;
+    min-height: calc(100vh - 6em - 6em);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+
+}
+
+article {
+    box-sizing: border-box;
+    background-color: yellow;
+    padding: 2em;
+    flex-basis: 30%;
+    line-height: 20px;
+    margin-bottom: 2em;
+}
+
+article h1 {
+    font-family: Arial;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+aside {
+    box-sizing: border-box;
+    width: 30%;
+    float:right;
+    border: 1px solid black;
+}
+
+footer {
+    box-sizing: border-box;
+    clear: both;
+    height: 6em;
+    background-color: red;
+}
+
+
+/*
+@media all and (max-width: 1024px) { ... }
+@media all and (max-width: 839px) { ... }
+@media all and (max-width: 480px) { ... }
+*/
