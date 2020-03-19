@@ -1,12 +1,7 @@
 ## Introducción a la Programación
 
-    Jordi Collell <j@tmpo.io>
+    Jordi Collell <jordic@gmail.com>
     @galigan
-
-
-- [Programa de la Asignatura](programa.md)
-- [Clase 1](clase1.md)
-
 
 ### Objetivos
 
